@@ -24,3 +24,305 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/*Nuevo
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Clases útiles*/
+.df { display: flex; }
+.fd-c { flex-direction: column; }
+.jc-c { justify-content: center; }
+.jc-sb { justify-content: space-between; }
+.ai-c { align-items: center; }
+.w100{ width: 100%; }
+
+body {
+  background-color: #05081F;
+  color: #EEEFD8;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.5;
+  height: 100vh;
+}
+
+
+h1, h2, h3 {
+  font-family: 'Philosopher', sans-serif;
+}
+
+.h1-xl { font-size: 3.5em; }     
+
+.h2-lg { font-size: 2em; }
+
+
+.fw-bold { font-weight: 700; }
+.fw-medium { font-weight: 500; }
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.mb-1{
+  margin-bottom: 1em;
+}
+
+.mt-1{
+  margin-top: 1em;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.w100{ width: 100%; }
+.w90{ width: 90%; }
+.w30{ width: 30%; }
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  padding: 1em 3em;
+  animation: bg-nav 1s linear;
+  animation-timeline: scroll(root);
+}
+
+.navbarDetalle {
+  width: 100%;
+  padding: 1em 3em;
+}
+
+@keyframes bg-nav {
+  0% { background-color: rgba(5,8,31,0); }
+  20% { background-color: #05081F; }
+  100% { background-color: #05081F; }
+}
+
+.menu{
+    gap: 2em;
+    list-style: none;
+    transition: all 0.4s ease;
+}
+
+.menu :hover{
+  color: rgb(233, 154, 84);
+  scale: 1.1;
+}
+
+.redes{
+    gap:1em;
+}
+
+.redes a {
+  color:  #EEEFD8;
+  font-size: 1.2em;
+}
+
+.redes a :hover{
+  color: rgb(233, 154, 84);
+  scale: 1.1;
+}
+
+/*
+.hero{
+  height: 100vh;
+  background-image: url('../img/hero.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding: 3em;
+}*/
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background: linear-gradient(
+    to bottom,
+    rgba(5, 8, 31, 0.6) 0%,
+    rgba(5, 8, 31, 0.7) 60%,
+    rgba(5, 8, 31, 1) 100%
+  );
+
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.btn{
+    background-color: #EEEFD8;
+    color: rgb(0, 0, 0);
+    padding: 0.8em 4em;
+    border-radius: 2em;
+    font-size: 14px;
+    font-weight: 500;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease;
+}
+
+.btn:hover{
+  background-color: rgb(233, 154, 84); 
+}
+
+#recipes-container{
+  display: flex;          
+  flex-wrap: wrap;       
+  justify-content: space-between;
+  width: 90%;
+}
+
+.recipe-card{
+  width: 22%;
+  position: relative;
+  margin-bottom: 2em;
+}
+
+.img-container{
+  overflow: hidden;
+  border-radius: 20px;
+  aspect-ratio: 1/1;
+}
+
+.recipe-img{
+  transition: transform 0.5s ease, filter 0.5s ease; 
+  height: 100%;       
+}
+
+.recipe-img:hover {
+  transform: scale(1.1); 
+  filter: contrast(1.2) saturate(1.2);
+}
+
+.rating{
+  position: absolute;
+  top: 10px;    
+  right: 10px;    
+  color:#EEEFD8;
+  background-color:  #05081F;
+  padding: 0.1em 0.6em;
+  border-radius: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}
+
+.site-footer {
+  margin-top: 3em;
+  color: #EEEFD8;       
+  padding: 2em 1em;
+  text-align: center;
+}
+
+.contDetalle{
+  gap: 30px; 
+  width: 80%;
+  height: 80vh;
+  margin-top: 1em;
+}
+
+.left{
+  width: 50%;
+  height: 100%;
+  position: relative;
+}
+
+.right{
+  width: 50%;
+  height: 100%;
+}
+
+.imgGrande{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.datos {
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 10px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.item {
+  width: 30%; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  padding: 16px;
+  border-radius: 10px;
+  border: 1px solid  #f08a2a;
+  font-size: 12px;
+  text-align: center;
+}
+
+.item i {
+  font-size: 20px;
+  color: #f08a2a;
+}
+
+.lista{
+  list-style: none;
+  margin-top: 0.4em;
+  font-size: 14px;
+}
+
+#instrucciones{
+  margin-top: 3em;
+  line-height: 1.8;
+  width: 80%;
+}
+
+/*Tablet*/
+@media (max-width: 992px) {
+  .h1-lg { 
+    font-size: 2.6em; 
+  }
+  .h2-md { 
+    font-size: 1.6em; 
+  }
+  .recipe-card{
+    width: 30%;
+  }
+  .contDetalle{
+    flex-direction: column;
+    width: 80%;
+    height: auto;
+  }
+  .right{
+    width: 100%;
+  }
+  .left{
+    width: 100%;
+    height: 40vh;
+  }
+  .textoInst{
+    margin-top: 40em;
+  }
+}
+
+/*Mobile*/
+@media (max-width: 576px) {
+  .recipe-card{
+    width: 48%;
+  }
+  .hero {
+    height: 100dvh;
+  }
+}
