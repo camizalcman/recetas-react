@@ -3,7 +3,7 @@ import Card from '@/components/Card'
 const CardsGrid = ({ items, title }) => {
 
   return (
-    <div>
+    <div className='w-[90%]'>
       <h2>{title}</h2>
 
       <div className="flex flex-wrap">

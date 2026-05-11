@@ -1,9 +1,11 @@
 import Image from 'next/image';
+import { FaInstagram, FaWhatsapp } from 'react-icons/fa';
+import { HiOutlineMail } from 'react-icons/hi';
 
 const Navbar = () => {
 
     return (
-        <div className='flex items-center justify-between px-6 py-4 text-white sm:px-10'>
+        <div className='navbar fixed top-0 left-0 w-full z-50 flex items-center justify-between px-6 sm:px-10 py-4 text-white'>
             <div className='text-sm'>
                 <Image src={'/assets/img/cubiertos-blanco.png'} width={100} height={100} alt='logo cocina' className="w-8 h-auto"/>
             </div>
@@ -15,10 +17,10 @@ const Navbar = () => {
                 </ul>
             </nav>
             
-            <div>
-                <a href="#"><i className="fa-brands fa-instagram"></i></a>
-                <a href="#"><i className="fa-brands fa-whatsapp"></i></a>
-                <a href="#"><i className="fa-regular fa-envelope"></i></a>
+            <div className='flex gap-2'>
+                <a href="#"><FaInstagram className="text-2xl" /></a>
+                <a href="#"><FaWhatsapp className="text-2xl" /></a>
+                <a href="#"><HiOutlineMail className="text-2xl" /></a>
             </div>
 
         </div>
