@@ -19,7 +19,3 @@
   }
 }
 
-.navbar {
-  animation: bg-nav 1s linear;
-  animation-timeline: scroll(root);
-}
