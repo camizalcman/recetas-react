@@ -1,4 +1,4 @@
-import HomeContainer from '@/containers/RecipeContainer'
+import RecipeContainer from '@/containers/RecipeContainer'
 
 export default function Recipe(){
   return <RecipeContainer />
