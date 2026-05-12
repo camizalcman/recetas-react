@@ -4,11 +4,11 @@ const CardsGrid = ({ items, title }) => {
 
   return (
     <div className='w-[90%] flex flex-col items-center'>
-      <h2 className='mb-4 font-medium text-[2em] font-[Philosopher]'>{title}</h2>
+      <h2 className='mb-8 font-medium text-[2em] font-[Philosopher]'>{title}</h2>
 
       <div className="flex flex-wrap justify-between">
-        { items.map (({ id, name, rating, image}, index) =>
-          <Card key={index} name={name} rating={rating} image={image} id={id}/>
+        { items.slice(0,16).map (({ id, name, rating, image, difficulty}, index) =>
+          <Card key={index} name={name} rating={rating} image={image} difficulty={difficulty} id={id}/>
         )}
       </div>
 
