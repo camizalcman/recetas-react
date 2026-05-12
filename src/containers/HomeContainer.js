@@ -32,7 +32,7 @@ const HomeContainer = () => {
     return (
         <div>
             <Hero />
-            <section className='flex justify-center items-center border border-red-500'>
+            <section className='flex justify-center items-center'>
                 {!loading && <CardsGrid items={items} title='Recetas destacadas'/>}
                 {loading && <div>LOADING...</div>}
                 {error !== '' && <div>{errorMsg}</div>}

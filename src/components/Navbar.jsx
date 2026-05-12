@@ -5,7 +5,7 @@ import { HiOutlineMail } from 'react-icons/hi';
 const Navbar = () => {
 
     return (
-        <div className='fixed top-0 left-0 w-full z-50 flex items-center justify-between w-full px-12 py-4 sm:px-10  text-white'>
+        <div className='fixed top-0 left-0 w-full z-50 flex items-center justify-between px-12 py-4 sm:px-10  text-white'>
             <div className='text-sm'>
                 <Image src={'/assets/img/cubiertos-blanco.png'} width={100} height={100} alt='logo cocina' className="w-8 h-auto"/>
             </div>

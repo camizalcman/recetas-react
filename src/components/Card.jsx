@@ -5,8 +5,8 @@ import Link from 'next/link';
 const Card = ({ id, name, rating, image }) => {
    
   return (
-    <div className='w-[25%]'>
-      <Image className='rounded-[20px]' src={image} width={260} height={260} alt={name} />
+    <div className='w-[90%] sm:w-[23%] '>
+      <div className='relative aspect-square'><Image className='rounded-[20px] object-cover' src={image} fill alt={name} /></div>
       <h3>{name}</h3>
       <p>{rating}</p>
       <Link href={`/recipe/${id}`}>Ver receta</Link>
