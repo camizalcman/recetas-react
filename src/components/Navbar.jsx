@@ -25,15 +25,15 @@ const Navbar = () => {
 
             <nav>       
                 <ul className='flex gap-6 text-base font-medium sm:gap-8'>
-                    <li><a href="/#inicio">Inicio</a></li>
-                    <li><a href="/#recipes">Recetas</a></li>
+                    <li><a href="/#inicio" className='hover:text-orange-500 transition-colors duration-300'>Inicio</a></li>
+                    <li><a href="/#recipes" className='hover:text-orange-500 transition-colors duration-300'>Recetas</a></li>
                 </ul>
             </nav>
             
             <div className='flex gap-4'>
-                <a href="#"><FaInstagram className="text-2xl" /></a>
-                <a href="#"><FaWhatsapp className="text-2xl" /></a>
-                <a href="#"><HiOutlineMail className="text-2xl" /></a>
+                <a href="#" className='hover:text-orange-500 transition-colors duration-300'><FaInstagram className="text-2xl" /></a>
+                <a href="#" className='hover:text-orange-500 transition-colors duration-300'><FaWhatsapp className="text-2xl" /></a>
+                <a href="#" className='hover:text-orange-500 transition-colors duration-300'><HiOutlineMail className="text-2xl" /></a>
             </div>
 
         </div>

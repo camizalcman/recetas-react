@@ -34,7 +34,8 @@ const HomeContainer = () => {
             <Hero />
             <section className='flex justify-center items-center'>
                 {!loading && <CardsGrid items={items} title='Recetas destacadas'/>}
-                {loading && <div>LOADING...</div>}
+                {loading && <div className='w-full min-h-screen flex items-center justify-center'><p className='text-[1.5em] font-[Philosopher]'>
+                    Loading...</p></div>}
                 {error !== '' && <div>{errorMsg}</div>}
             </section>
         </div>
