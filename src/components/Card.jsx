@@ -5,7 +5,7 @@ import Link from 'next/link';
 const Card = ({ id, name, rating, image, difficulty}) => {
    
   return (
-    <div className='w-[90%] sm:w-[23%] mb-8'>
+    <div className='w-[48%] sm:w-[30%] md:w-[23%] mb-8'>
       <Link href={`/recipe/${id}`}>
       
         <div className='relative aspect-square overflow-hidden rounded-[20px] mb-4'>
@@ -17,8 +17,8 @@ const Card = ({ id, name, rating, image, difficulty}) => {
 
       </Link>
       
-      <h3 className='text-[1.5em] font-[Philosopher]'>{name}</h3>
-      <p>{difficulty}</p>
+      <h3 className='text-[1.1em] sm:text-[1.3em] md:text-[1.5em] font-[Philosopher]'>{name}</h3>
+      <p className='text-[0.8em] sm:text-[0.9em] md:text-[1em]'>{difficulty}</p>
   
       
     </div>

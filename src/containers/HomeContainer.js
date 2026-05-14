@@ -1,8 +1,8 @@
 'use client';
 import CardsGrid from '@/components/CardsGrid';
+import Hero from '@/components/Hero';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
-import Hero from '@/components/Hero';
 
 const HomeContainer = () => {
     const [items, setItems] = useState([]);

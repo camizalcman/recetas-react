@@ -37,9 +37,9 @@ const RecipeContainer = ({ id }) => {
       {!loading && 
       <section>
         <div className='w-full flex items-center justify-center py-20'>
-            <div className='w-[80%] flex flex-col'>
-              <div className='flex gap-6'>
-                  <div className='relative aspect-square mb-4 w-[50%]'>
+            <div className='w-[90%] flex flex-col'>
+              <div className='flex flex-col gap-6 md:flex-row'>
+                  <div className='relative aspect-square mb-4 md:w-[50%] w-[100%]'>
                       <Image
                       className='object-cover rounded-[20px]'
                       src={item.image}
@@ -51,7 +51,7 @@ const RecipeContainer = ({ id }) => {
                   </div>
 
                 
-                  <div className='w-[50%] flex flex-col gap-4'>
+                  <div className='md:w-[50%] w-[100%] flex flex-col gap-4'>
                       <h3 className='text-[2.5em] font-[Philosopher]'>{item.name}</h3>
 
                       <div className='flex flex-wrap w-full gap-[10px] mt-5'>
